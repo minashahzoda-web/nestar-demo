@@ -1,12 +1,19 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "@/styles/Home.module.css";
-
+import { Box, Container, Stack } from "@mui/material";
+import { brown, green } from "@mui/material/colors";
 
 export default function Home() {
   return (
     <>
-      
+    <Stack sx={{background: green[300]}}>Header</Stack>
+    <Container>
+      <Stack flexDirection={"column"} >
+        <Box>Popular Properties</Box>
+        <Box>Top Agents</Box>
+        <Box>Top Properties</Box>
+        <Box>Events</Box>
+      </Stack>
+    </Container>
+    <Stack sx={{background: brown[300]}}>Footer</Stack>
     </>
   );
 }
