@@ -1,5 +1,4 @@
 import { Stack } from "@mui/material";
-import { brown, green } from "@mui/material/colors";
 import Head from "next/head";
 import Top from "../Top";
 import Footer from "../Footer";
