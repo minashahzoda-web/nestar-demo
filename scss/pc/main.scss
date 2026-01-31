@@ -1,7 +1,6 @@
 /* IMPORTS */
-@use "../variables.scss" as *;
-
-@use "../pc/homepage/homepage.scss" as *;
+@import "/scss/variables.scss";
+@import "/scss/pc/homepage/homepage.scss";
 
 #pc-wrap {
   #top {
@@ -17,30 +16,25 @@
         z-index: 99;
         align-items: center;
         border-top: 1px solid rgba(255, 255, 255, 0.07);
-
         &.transparent {
           background-color: #181a209e;
         }
-
         .container {
           flex-direction: row;
           align-items: center;
           justify-content: space-between;
-
           .logo-box {
             img {
               width: 150px;
               cursor: pointer;
             }
           }
-
           .router-box {
             position: relative;
             width: 617px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-
             div {
               position: relative;
               color: #eeeeee;
@@ -57,7 +51,6 @@
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
-
             .login-user {
               width: 42px;
               height: 42px;
@@ -67,7 +60,6 @@
               border-radius: 60px;
               border: 1px solid #ffffff;
               cursor: pointer;
-
               svg {
                 color: #ffffff;
                 margin-right: 10px;
@@ -101,31 +93,27 @@
     height: 860px;
     background-image: url("/img/banner/header1.svg");
     background-size: cover;
-
     .container {
       position: relative;
       margin-top: 20px;
       flex-direction: column;
       align-items: center;
-
       .search-box {
         position: relative;
         margin-top: 615px;
         padding: 16px 29px;
         width: 1094px;
-        height: 90px;
+        height: 96px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         background: rgba(255, 255, 255, 0.28);
         border-radius: 12px;
-
         .select-box {
           width: 712px;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-
           .box {
             padding: 24px 22px;
             width: 213px;
@@ -138,13 +126,11 @@
             background: rgba(255, 255, 255, 0.575);
             box-sizing: border-box;
             cursor: pointer;
-
             &.on {
               background: #ffffff;
               border: 1px solid #000;
               color: #181a20;
             }
-
             span {
               color: #181a20;
               font-family: $font;
@@ -159,19 +145,16 @@
           display: flex;
           flex-direction: row;
           align-items: center;
-
           .advanced-filter {
             display: flex;
             flex-direction: row;
             align-items: center;
-
             img {
               margin-right: 10px;
               width: 25px;
               height: 22px;
               cursor: pointer;
             }
-
             span {
               color: #ffffff;
               font-family: $font;
@@ -199,7 +182,6 @@
               color: #ffffff;
             }
           }
-
           .filter-location {
             position: absolute;
             padding: 40px 40px;
@@ -245,7 +227,6 @@
                 cursor: pointer;
                 text-transform: capitalize;
               }
-
               label {
                 line-height: 13px;
               }
@@ -268,13 +249,11 @@
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             box-sizing: border-box;
             z-index: 1;
-
             &.on {
               visibility: visible;
               transition: 0.2s ease-out;
               background: #fffdfd;
             }
-
             div {
               position: relative;
               width: 272px;
@@ -282,7 +261,6 @@
               border-radius: 15px;
               cursor: pointer;
               background-size: cover;
-
               span {
                 position: absolute;
                 top: 13px;
@@ -321,7 +299,6 @@
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             box-sizing: border-box;
             z-index: 1;
-
             &.on {
               visibility: visible;
               transition: 0.2s ease-out;
@@ -339,7 +316,6 @@
               font-weight: 400;
               line-height: 26px;
               cursor: pointer;
-
               &:hover {
                 border-radius: 5px;
                 border: 1px solid #b9b9b9;
@@ -384,7 +360,6 @@
     }
   }
 }
-
   #footer {
     position: relative;
     padding: 60px 0px 18px 0px;
@@ -392,33 +367,27 @@
     display: flex;
     flex-direction: row;
     background: #181a20;
-
     .footer-container {
       width: 1300px;
       height: auto;
       margin: 0 auto;
-
       .main {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
         .left {
           height: 360px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-
           .footer-box {
             display: flex;
             flex-direction: column;
-
             .logo {
               width: 128px;
               height: 52px;
               cursor: pointer;
             }
-
             span {
               color: #bebdbd;
               font-family: $font;
@@ -438,7 +407,6 @@
             .media-box {
               margin-top: 12px;
               color: #929495;
-
               svg {
                 font-size: 32px;
                 margin-right: 22px;
@@ -450,11 +418,9 @@
         .right {
           display: flex;
           flex-direction: column;
-
           .top {
             display: flex;
             flex-direction: column;
-
             strong {
               color: #ffffff;
               font-family: $font;
@@ -475,7 +441,6 @@
               box-sizing: border-box;
               border-radius: 12px;
               background: #212329;
-
               input {
                 margin-right: 10px;
                 width: 85%;
@@ -489,7 +454,6 @@
                 line-height: 26px;
                 background: none;
               }
-
               span {
                 color: #ffffff;
                 font-family: $font;
@@ -506,11 +470,9 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-
             div {
               display: flex;
               flex-direction: column;
-
               strong {
                 margin-bottom: 3px;
                 color: #ffffff;
@@ -521,7 +483,6 @@
                 line-height: normal;
                 text-transform: capitalize;
               }
-
               span {
                 margin-top: 25px;
                 color: #bebdbd;
@@ -530,7 +491,6 @@
                 font-style: normal;
                 font-weight: 400;
                 cursor: pointer;
-
                 &:hover {
                   color: #ffffff;
                   text-decoration-line: underline;
@@ -548,7 +508,6 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
-
         span {
           color: #bebdbd;
           font-family: $font;

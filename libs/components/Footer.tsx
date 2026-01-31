@@ -4,14 +4,13 @@ import TelegramIcom from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
-
 const Footer = () => {
     return (
         <Stack className={"footer-container"}>
             <Stack className={"main"}>
                 <Stack className={"left"}>
                     <Box component={"div"} className={"footer-box"}>
-                        <img src="img/logo.logoWhite.svg" alt="" className={"logo"}/>
+                        <img src={"/img/logo/logoWhite.svg"} alt="" className={"logo"}/>
                     </Box>
                     <Box component={"div"} className={"footer-box"}>
                         <span>total free customer care</span>

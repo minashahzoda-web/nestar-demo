@@ -17,14 +17,14 @@ const withLayoutBasic = (Component: any) => {
 
           <Stack
           className={`header-basic`}
-          sx={{
+          style={{
             backgroundImage: `url(/img/banner/properties.png)`,
             backgroundSize: "cover",
-            boxShadow: "inset 10px 40px 150px 40px rgb(24 22 36"
+            boxShadow: "inset 10px 40px 150px 40px rgb(24 22 36)"
           }}
           >
             <Stack className={"container"}>
-              <strong>Property Search</strong>
+              <strong>Search</strong>
               <span>We are glad to see you again!</span>
             </Stack>
           </Stack>
@@ -33,7 +33,7 @@ const withLayoutBasic = (Component: any) => {
             <Component {...props} />
           </Stack>
 
-          <Stack id={"foter"}><Footer /></Stack>
+          <Stack id={"footer"}><Footer /></Stack>
         </Stack>
       </>
     );
